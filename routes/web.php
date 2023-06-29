@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return Inertia('Welcome');
+    return Inertia('Welcome', [
+        'user' => ['name' => 'test']
+    ]);
 });
