@@ -7,5 +7,5 @@ defineProps({auth: Object})
 <template>
     <Head title="Welcome"><title>Welcome</title></Head>
     <h1>Welcome</h1>
-    <p>Hello {{ auth.user.name }}, welcome to your first Inertia app!</p>
+    <p>Hello {{ auth?.user?.name }}, welcome to your first Inertia app!</p>
 </template>

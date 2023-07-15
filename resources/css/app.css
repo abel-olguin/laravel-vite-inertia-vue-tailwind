@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Nunito, sans-serif;
+    }
+}
+
+.overlay {
+    @apply bg-red-400 absolute w-full h-full;
+    z-index: -1;
+    inset: 0;
+}
+
+
+.menu-header-section::after {
+    content: "";
+    @apply block h-full w-full bg-cover absolute bottom-0 left-0 right-0;
+    background: url('/resources/images/background-header.png') bottom no-repeat;
+    z-index: -1;
+}
